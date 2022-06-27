@@ -18,7 +18,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     private void OnEnable()
     {
 #if UNITY_EDITOR 
-        database = (ItemDatabaseObject)AssetDatabase.LoadAssetAtPath("Assets/Scriptable Objects/Items/Database.asset", typeof(ItemDatabaseObject));
+        database = (ItemDatabaseObject)AssetDatabase.LoadAssetAtPath("Assets/Resources/Database.asset", typeof(ItemDatabaseObject));
 #else
         database = Resources.Load<ItemDatabaseObject>("Database");
 #endif
@@ -62,7 +62,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             JsonUtility.FromJsonOverwrite(bf.Deserialize(file).ToString(), this);
             file.Close();
         }
-        else { Debug.Log("Not Founde"); }
     }
 
     public void OnAfterDeserialize()

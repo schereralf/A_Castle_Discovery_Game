@@ -161,6 +161,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -203788372251047020, guid: 344c7fae77bccef4196abb709c29599a, type: 3}
+--- !u!1 &40615294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 69545456287193193, guid: 59e5b81dbf3831d458f4dcbf036ff153, type: 3}
+  m_PrefabInstance: {fileID: 111550178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &71854286 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6790541468647775423, guid: 344c7fae77bccef4196abb709c29599a, type: 3}
@@ -319,6 +324,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 845765878028813011, guid: 59e5b81dbf3831d458f4dcbf036ff153, type: 3}
   m_PrefabInstance: {fileID: 111550178}
   m_PrefabAsset: {fileID: 0}
+--- !u!122 &111550182
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40615294}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4286611584
+  m_Size: 5
 --- !u!1 &183014343 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5861433502526098345, guid: 344c7fae77bccef4196abb709c29599a, type: 3}
@@ -837,6 +854,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 353240564258822177, guid: 9b037d14a3a4af24694aa1f33b751d1a, type: 3}
   m_PrefabInstance: {fileID: 536316803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &536361210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2636056449675222151, guid: ce8ea5099447f8f489360c278aa93bed, type: 3}
+  m_PrefabInstance: {fileID: 1413553532}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &544275814
 GameObject:
@@ -2706,6 +2728,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1807710581995232878, guid: ce8ea5099447f8f489360c278aa93bed, type: 3}
   m_PrefabInstance: {fileID: 1413553532}
   m_PrefabAsset: {fileID: 0}
+--- !u!122 &1413553536
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536361210}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 3031104150
+  m_Size: 5
 --- !u!1001 &1438218145
 PrefabInstance:
   m_ObjectHideFlags: 0
