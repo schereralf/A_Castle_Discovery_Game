@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33130c41504b59240bded5df75b3a3e0, type: 3}
+  m_Name: Wood
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5556084586843192700, guid: 16cc9e43c8bd51e4ca7cba46bfe92db9, type: 3}
+  type: 0
+  description: Wood is useful in buildings and for making furniture and siege equipment.
+  costPerModus: 8
