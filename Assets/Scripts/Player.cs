@@ -1,19 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
+
+using TMPro;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    //Player collects an inventory of discovered items during the game.
+    //Our player collects an inventory of discovered items during the game.
     //Items can be either construction materials or construction tools.
     //Will add Workmen as a third category soon.
 
     public InventoryObject Inventory;
 
-    // Most of the player code of course deals with the Charactercontroller
-    // since the castle where items are hidden contains a LOT of stairs, a CharacterController
-    // appeared more reasonable than a Playercontroller.
+    // Most of the player code of course deals with the Character controller
+    // since the castle where items are hidden contains a LOT of stairs, a Character Controller
+    // appeared more reasonable than a Player controller.
 
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI narrateText;
+    private int score;
+    private string narrate;
     private readonly float speed = 15.0f;
     private readonly float jumpSpeed = 10.0f;
     private float horizontalInput;
@@ -31,11 +35,13 @@ public class Player : MonoBehaviour
     {
         var item = other.GetComponent<Item>();
 
-        Debug.Log(item.GetType());
-
         if (item)
         {
             Inventory.AddItem(item.item, 1);
+            score = Inventory.Container.Count;
+            narrate = item.item.name+". "+item.item.description;
+            scoreText.text = "Score: " + score +" discovered item types";
+            narrateText.text = "Last discovered item: " + narrate;
             Destroy(other.gameObject);
         }
     }

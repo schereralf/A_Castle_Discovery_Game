@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Castle_A.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/MyBudgetCastle.unity
+    guid: f1227aff5c1d0e64b8b786864adbb76c
   m_configObjects: {}

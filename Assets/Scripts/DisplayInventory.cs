@@ -15,7 +15,7 @@ public class DisplayInventory : MonoBehaviour
 
     readonly Dictionary<InventorySlot, GameObject> itemsDisplayed = new();
 
-    // Start is called before the first frame update.  Here all it does is create an inventory display for the item if it is the first one that was found.
+    // Start is called before the first frame update.  Here all it does is create an inventory display.
     void Start()
     {
         CreateDisplay();
