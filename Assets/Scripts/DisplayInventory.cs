@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -15,7 +15,7 @@ public class DisplayInventory : MonoBehaviour
 
     readonly Dictionary<InventorySlot, GameObject> itemsDisplayed = new();
 
-    // Start is called before the first frame update.  Here all it does is create an inventory display.
+    // Start is called before the first frame update.  Here we create an inventory display.
     void Start()
     {
         CreateDisplay();

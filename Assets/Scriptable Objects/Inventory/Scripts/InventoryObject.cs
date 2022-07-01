@@ -34,7 +34,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
                 return;
             }
         }
-
         Container.Add(new InventorySlot(database.getID[_item],_item, _amount));
     }
 
@@ -42,9 +41,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     {
         string saveData = JsonUtility.ToJson(this, true);
         BinaryFormatter bf = new();
-
-        Debug.Log(Application.persistentDataPath + savePath);
-
         FileStream file = File.Create(string.Concat(Application.persistentDataPath, savePath));
         bf.Serialize(file, saveData);
         file.Close();
@@ -55,9 +51,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         if (File.Exists(string.Concat(Application.persistentDataPath, savePath)))
         {
             BinaryFormatter bf = new();
-
-            Debug.Log("filepath to load" + Application.persistentDataPath + savePath);
-
             FileStream file = File.Open(string.Concat(Application.persistentDataPath, savePath), FileMode.Open);
             JsonUtility.FromJsonOverwrite(bf.Deserialize(file).ToString(), this);
             file.Close();
@@ -66,7 +59,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnAfterDeserialize()
     {
-
         Debug.Log("number of items"+Container.Count);
 
         for(int i=0; i<Container.Count; i++) 
@@ -86,6 +78,9 @@ public class InventorySlot
     public ItemObject item;
     public int amount;
     public int ID;
+
+    //ENCAPSULATION
+    //Each feature of an InventorySlot is available for use elsewhere but these features cannot be changed 
     public InventorySlot(int _id, ItemObject _item, int _amount)
     {
         ID = _id;

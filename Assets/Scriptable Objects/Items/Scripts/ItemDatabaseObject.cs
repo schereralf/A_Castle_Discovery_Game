@@ -19,8 +19,6 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
             getItem.Add(i, Items[i]);
         }
     }
-
     public void OnBeforeSerialize()
-    {     
-    }
+    { }
 }
