@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 5791264687401076187, guid: 4f4e538ee1a64b342b043f75523c581c, type: 3}
   type: 2
+  craft: 1
   description: Spatulae are used by masons  to apply mortar and plaster to building
     walls.
   constructionBonus: 1.5

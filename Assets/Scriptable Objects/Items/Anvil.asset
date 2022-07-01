@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 2125109982770364275, guid: 450b046271f19be41997ef03932d3b33, type: 3}
   type: 2
+  craft: 2
   description: A anvil is used by the smith for smashing and straightening metal
     stuff into useful shapes.
   constructionBonus: 2.5

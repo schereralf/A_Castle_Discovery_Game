@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6033816211524396277, guid: 554895f156245314f8414839c26ea014, type: 3}
   type: 2
+  craft: 2
   description: A furnace allows the smith to mold and transform metals into useful
     things.
   constructionBonus: 4

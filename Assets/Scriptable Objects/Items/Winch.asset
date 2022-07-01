@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   type: 2
+  craft: 1
   description: 
   constructionBonus: 2
   substance: {fileID: 11400000, guid: c528b16345706db499007bbf73fa5930, type: 2}

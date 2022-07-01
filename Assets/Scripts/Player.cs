@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         var item = other.GetComponent<Item>();
+        var masteraxl = other.GetComponent<MasterAxl>();
+        var mastersverker = other.GetComponent<MasterSverker>();
+        var masterole = other.GetComponent<Master>();
 
         if (item)
         {
@@ -44,6 +47,37 @@ public class Player : MonoBehaviour
             narrateText.text = "Last discovered item: " + narrate;
             Destroy(other.gameObject);
         }
+
+        if (masteraxl)
+        {
+            Debug.Log("made it 1");
+            masteraxl.CheckProgress(Inventory);
+        }
+
+        if (mastersverker)
+        {
+            Debug.Log("made it 2");
+            mastersverker.CheckProgress(Inventory);
+        }
+
+        if (masterole)
+        {
+            Debug.Log("made it 3");
+            masterole.CheckProgress(Inventory);
+        }
+
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        var master = other.GetComponent<Master>();
+
+        if (master)
+        {
+            Debug.Log("made it 3");
+            master.SwitchOffMessage();
+        }
+
     }
 
     // Update is called once per frame.  Here we do basic movement including jumps, but also we have opportunity to save inventory status

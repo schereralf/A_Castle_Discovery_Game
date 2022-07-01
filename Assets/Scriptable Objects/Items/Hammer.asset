@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6636786986119700508, guid: 2d4c42f9a574fb64e91161b93ec4aa2c, type: 3}
   type: 2
+  craft: 2
   description: Every blacksmith needs a hammer !
   constructionBonus: 2
   substance: {fileID: 11400000, guid: 1c29168526e01a4418f16447f29c0e56, type: 2}

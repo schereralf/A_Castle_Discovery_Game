@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 8853760292500455001, guid: 99e76611e7a5b1a489438c258b916801, type: 3}
   type: 0
+  craft: 2
   description: Iron nails, horseshoes, grates, rods and tools were both useful and
     expensive.
   costPerModus: 30
