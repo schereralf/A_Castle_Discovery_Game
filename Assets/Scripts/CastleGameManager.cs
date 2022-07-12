@@ -21,6 +21,7 @@ public class CastleGameManager : MonoBehaviour
     private string maxScorer3;
     private int maxScore4 = 0;
     private string maxScorer4;
+    private bool filled;
 
     private string playerID;
     public TMP_InputField inputField;
@@ -55,6 +56,9 @@ public class CastleGameManager : MonoBehaviour
 
         foreach (ScoreData item in namesList)
         {
+            filled = false;
+            Debug.Log("item"+item.PlayerScore+"");
+
             if (item.PlayerScore > maxScore1)
             {
                 maxScore4 = maxScore3; maxScorer4 = maxScorer3;
@@ -62,28 +66,30 @@ public class CastleGameManager : MonoBehaviour
                 maxScore2 = maxScore1; maxScorer2 = maxScorer1;
                 maxScore1 = item.PlayerScore;
                 maxScorer1 = item.Player;
+                filled = true;
             }
-            else if (item.PlayerScore > maxScore2)
+            if (item.PlayerScore > maxScore2 && !filled)
             {
+                Debug.Log("thankgodwegothere"+item.PlayerScore);
                 maxScore4 = maxScore3; maxScorer4 = maxScorer3;
                 maxScore3 = maxScore2; maxScorer3 = maxScorer2;
                 maxScore2 = item.PlayerScore;
                 maxScorer2 = item.Player;
+                filled = true;
             }
-            else if (item.PlayerScore > maxScore3)
+            if (item.PlayerScore > maxScore3 && !filled)
             {
                 maxScore4 = maxScore3; maxScorer4 = maxScorer3;
                 maxScore3 = item.PlayerScore;
                 maxScorer3 = item.Player;
+                filled = true;
             }
-            else if (item.PlayerScore > maxScore4)
+            else if (item.PlayerScore > maxScore4 && !filled)
             {
                 maxScore4 = item.PlayerScore;
                 maxScorer4 = item.Player;
             }
         }
-
-        Debug.Log(maxScore1 + maxScore2 + maxScore3 + maxScore4);
 
         //Here we still need to List highest top scores and names on the glory board
         Scorer1.text = $"{maxScorer1} : {maxScore1}";
@@ -100,6 +106,7 @@ public class CastleGameManager : MonoBehaviour
     public void AddSession(int points)
     {
         namesList.Add(new ScoreData { PlayerScore = points, Player = playerID });
+        Debug.Log("added to scoredata" + points + playerID);
     }
     // Begin links to Start button
     public void Begin()
@@ -109,14 +116,11 @@ public class CastleGameManager : MonoBehaviour
     // Exit links to Exit process
     public void Exit()
     {
+
 #if UNITY_EDITOR
-
         EditorApplication.ExitPlaymode();
-#else
-        Instance.Exit();
-        Application.Quit();
-
 #endif
+        Application.Quit();
     }
 
     // Serializable section.  Key is that the struct for the player+score data and its two variables are serializable,
@@ -136,7 +140,7 @@ public class CastleGameManager : MonoBehaviour
 
     public void LoadNames()
     {
-        string path = Application.persistentDataPath + "/savefile.json";
+        string path = Application.persistentDataPath + "/savecastlefile.json";
         if (File.Exists(path))
         {
             string json = File.ReadAllText(path);
@@ -147,15 +151,12 @@ public class CastleGameManager : MonoBehaviour
 
     public void SaveNames()
     {
-        Savedata data = new Savedata
+        Savedata data = new()
         {
             savedList = Instance.namesList
         };
-
         string json = JsonUtility.ToJson(data);
-        Debug.Log(Application.persistentDataPath);
-
         // Saving json copy of savedList in generic directory
-        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+        File.WriteAllText(Application.persistentDataPath + "/savecastlefile.json", json);
     }
 }

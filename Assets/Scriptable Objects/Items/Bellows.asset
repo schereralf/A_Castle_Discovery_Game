@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
-  m_Name: Winch
+  m_Name: Bellows
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3461519586254468228, guid: a3d39fc174c2d214fbc50c5b6cbcb283, type: 3}
+  prefab: {fileID: 6937615650793717101, guid: 7c86f0faf60558847a031fa20b84d230, type: 3}
   type: 2
-  craft: 1
-  description: Winches are used to lift heavy stuff such as bricks, stones and sandwiches
-    up to lofty levels where masons or roofers often work.
-  constructionBonus: 2
-  substance: {fileID: 11400000, guid: c528b16345706db499007bbf73fa5930, type: 2}
+  craft: 2
+  description: A smith uses bellows to bring air into a furnace, so that the fire
+    there burns hotter and brighter.
+  constructionBonus: 0
+  substance: {fileID: 0}

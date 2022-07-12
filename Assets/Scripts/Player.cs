@@ -6,17 +6,18 @@ public class Player : MonoBehaviour
 {
     //Our player collects an inventory of discovered items during the game.
     //Items can be either construction materials or construction tools.
-    //Will add Workmen as a third category soon.
+    //Will add Workmen as a third category eventually.
 
     public InventoryObject Inventory;
 
-    // Most of the player code of course deals with the Character controller
-    // since the castle where items are hidden contains a LOT of stairs, a Character Controller
-    // appeared more reasonable than a Player controller.
-
+    // Most of the player code of course deals with the character controller
+    // since the castle where items are hidden contains a LOT of stairs, a character controller
+    // appeared more reasonable than a player controller.
+    
+    private GameManager gameManager;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI narrateText;
-    private int score;
+    public int score;
     private string narrate;
     private readonly float speed = 15.0f;
     private readonly float jumpSpeed = 10.0f;
@@ -30,42 +31,60 @@ public class Player : MonoBehaviour
     public float groundDistance = 0.5f;
     public LayerMask groundMask;
     public bool isGrounded;
+    private bool ole_done = false;
+    private bool axl_done = false;
+    private bool sverker_done = false;
 
-    public void OnTriggerEnter(Collider other)
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
+        public void OnTriggerEnter(Collider other)
     {
         var item = other.GetComponent<Item>();
         var masteraxl = other.GetComponent<MasterAxl>();
         var mastersverker = other.GetComponent<MasterSverker>();
-        var masterole = other.GetComponent<Master>();
+        var masterole = other.GetComponent<MasterOle>();
 
         if (item)
         {
             Inventory.AddItem(item.item, 1);
-            score = Inventory.Container.Count;
+            CheckScore();
             narrate = item.item.name+". "+item.item.description;
-            scoreText.text = "Score: " + score +" discovered item types";
             narrateText.text = "Last discovered item: " + narrate;
             Destroy(other.gameObject);
         }
 
         if (masteraxl)
         {
-            Debug.Log("made it 1");
-            masteraxl.CheckProgress(Inventory);
+            if (!axl_done) axl_done = true;
+            CheckScore();
+            masteraxl.CheckProgress(Inventory, score );
         }
 
         if (mastersverker)
         {
-            Debug.Log("made it 2");
-            mastersverker.CheckProgress(Inventory);
+            if (!sverker_done) sverker_done = true;
+            CheckScore();
+            mastersverker.CheckProgress(Inventory, score);
         }
 
         if (masterole)
         {
-            Debug.Log("made it 3");
-            masterole.CheckProgress(Inventory);
+            if (!ole_done) ole_done = true;
+            CheckScore();
+            masterole.CheckProgress(Inventory, score);
         }
+    }
 
+    public void CheckScore()
+    {
+        score = Inventory.Container.Count;
+        if (axl_done) score += 5;
+        if (ole_done) score += 5;
+        if (sverker_done) score += 5;
+        scoreText.text = "Score: " + score;
     }
 
     public void OnTriggerExit(Collider other)
@@ -74,10 +93,8 @@ public class Player : MonoBehaviour
 
         if (master)
         {
-            Debug.Log("made it 3");
             master.SwitchOffMessage();
         }
-
     }
 
     // Update is called once per frame.  Here we do basic movement including jumps, but also we have opportunity to save inventory status
@@ -116,6 +133,13 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             Inventory.Load();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Debug.Log("Saving score" + score);
+            gameManager.SaveScore(score);
+            gameManager.GameOver();
         }
     }
   

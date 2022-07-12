@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -9,7 +9,7 @@ using UnityEditor;
 public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 {
     //Here we save the collected items that we have already - literally - run across in case we want to pick up game later on.
-    //Point is to explore castle and surropounding.  Next level we plan to discover an ox cart and a team of workmen and start building something.
+    //Point is to explore castle and surroundings.  Next level we plan to discover an ox-cart + team of workmen + start building something.
 
     public string savePath;
     private ItemDatabaseObject database;
@@ -59,8 +59,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnAfterDeserialize()
     {
-        Debug.Log("number of items"+Container.Count);
-
         for(int i=0; i<Container.Count; i++) 
         {
             Container[i].item = database.getItem[Container[i].ID];
