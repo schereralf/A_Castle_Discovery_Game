@@ -5,14 +5,19 @@ public enum ItemType
 {
 Substances,
 Workmen,
-Equipment
+Equipment,
+TradingGoods,
+Weapons,
 }
 
 public enum ItemCraft
 {
     Carpenter,
     Mason,
-    Smith
+    Smith,
+    Farmer,
+    Trader,
+    Guard
 }
 
 // ABSTRACTION

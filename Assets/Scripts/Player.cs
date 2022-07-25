@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour
     private float horizontalInput;
     private float forwardInput;
     public CharacterController controller;
-    private Vector3 move;
+    public Vector3 move;
     private Vector3 velocity;
     public float gravity = -9.81f;
     public Transform groundCheck;
@@ -34,6 +35,12 @@ public class Player : MonoBehaviour
     private bool ole_done = false;
     private bool axl_done = false;
     private bool sverker_done = false;
+    private bool gunnhild_done = false;
+    private bool olav_done = false;
+    private bool thoralf_done = false;
+
+    public List<AudioClip> chimes = new List<AudioClip>();
+    public AudioSource source;
 
     void Start()
     {
@@ -46,6 +53,9 @@ public class Player : MonoBehaviour
         var masteraxl = other.GetComponent<MasterAxl>();
         var mastersverker = other.GetComponent<MasterSverker>();
         var masterole = other.GetComponent<MasterOle>();
+        var mastergunnhild = other.GetComponent<MasterGunnhild>();
+        var masterolav = other.GetComponent<MasterOlav>();
+        var masterthoralf = other.GetComponent<MasterThoralf>();
 
         if (item)
         {
@@ -53,6 +63,7 @@ public class Player : MonoBehaviour
             CheckScore();
             narrate = item.item.name+". "+item.item.description;
             narrateText.text = "Last discovered item: " + narrate;
+            source.PlayOneShot(chimes[(Random.Range(0, chimes.Count))]);
             Destroy(other.gameObject);
         }
 
@@ -76,6 +87,27 @@ public class Player : MonoBehaviour
             CheckScore();
             masterole.CheckProgress(Inventory, score);
         }
+
+        if (mastergunnhild)
+        {
+            if (!gunnhild_done) gunnhild_done = true;
+            CheckScore();
+            mastergunnhild.CheckProgress(Inventory, score);
+        }
+
+        if (masterolav)
+        {
+            if (!olav_done) olav_done = true;
+            CheckScore();
+            masterolav.CheckProgress(Inventory, score);
+        }
+
+        if (masterthoralf)
+        {
+            if (!thoralf_done) thoralf_done = true;
+            CheckScore();
+            masterthoralf.CheckProgress(Inventory, score);
+        }
     }
 
     public void CheckScore()
@@ -84,6 +116,9 @@ public class Player : MonoBehaviour
         if (axl_done) score += 5;
         if (ole_done) score += 5;
         if (sverker_done) score += 5;
+        if (gunnhild_done) score += 5;
+        if (olav_done) score += 5;
+        if (thoralf_done) score += 5;
         scoreText.text = "Score: " + score;
     }
 
@@ -137,7 +172,6 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            Debug.Log("Saving score" + score);
             gameManager.SaveScore(score);
             gameManager.GameOver();
         }

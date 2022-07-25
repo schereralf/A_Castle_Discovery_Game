@@ -5,10 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Introduction1.unity
+    guid: 1cbfd008586d2c74c9fa57ca85b2ea98
+  - enabled: 0
+    path: Assets/Scenes/MyBudgetCastle1.unity
+    guid: f1227aff5c1d0e64b8b786864adbb76c
   - enabled: 1
     path: Assets/Scenes/Introduction.unity
-    guid: 1cbfd008586d2c74c9fa57ca85b2ea98
+    guid: bf354791df9b3f54aa94834cd807aa51
   - enabled: 1
     path: Assets/Scenes/MyBudgetCastle.unity
-    guid: f1227aff5c1d0e64b8b786864adbb76c
+    guid: 78ab7b7fb747b194997181eb36a1c1cc
+  - enabled: 1
+    path: Assets/Scenes/MyOtherBudgetCastle.unity
+    guid: 70acda1747dcaba41a22004c90441666
   m_configObjects: {}

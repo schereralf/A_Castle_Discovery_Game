@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour
     {
         CastleGameManager.Instance.AddSession(score);
         CastleGameManager.Instance.SaveNames();
-        Debug.Log("just saved score" + score);
     }
 
     public void GameOver()
@@ -47,7 +46,6 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         exitGameButton.gameObject.SetActive(true);
         startGameButton.gameObject.SetActive(true);
-        //completedGameText.gameObject.SetActive(true);
         introText.gameObject.SetActive(false);
         itemText.gameObject.SetActive(false);
     }

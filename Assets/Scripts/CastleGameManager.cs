@@ -57,7 +57,6 @@ public class CastleGameManager : MonoBehaviour
         foreach (ScoreData item in namesList)
         {
             filled = false;
-            Debug.Log("item"+item.PlayerScore+"");
 
             if (item.PlayerScore > maxScore1)
             {
@@ -109,11 +108,17 @@ public class CastleGameManager : MonoBehaviour
         Debug.Log("added to scoredata" + points + playerID);
     }
     // Begin links to Start button
-    public void Begin()
+    public void Begin1()
     {
         SceneManager.LoadScene(1);
     }
+
+    public void Begin2()
+    {
+        SceneManager.LoadScene(2);
+    }
     // Exit links to Exit process
+
     public void Exit()
     {
 

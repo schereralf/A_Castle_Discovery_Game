@@ -7,6 +7,12 @@ TagManager:
   - Building_Materials
   - Equipment
   - Workmen
+  - TradingGoods
+  - Weapons
+  - StoneFloor
+  - WoodFloor
+  - GravelFloor
+  - WaterFloor
   layers:
   - Default
   - TransparentFX
