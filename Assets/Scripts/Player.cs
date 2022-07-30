@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
         var masterolav = other.GetComponent<MasterOlav>();
         var masterthoralf = other.GetComponent<MasterThoralf>();
 
-        if (item)
+        if (item!=null)
         {
             Inventory.AddItem(item.item, 1);
             CheckScore();

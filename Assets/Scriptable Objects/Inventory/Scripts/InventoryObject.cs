@@ -20,7 +20,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 #if UNITY_EDITOR 
         database = (ItemDatabaseObject)AssetDatabase.LoadAssetAtPath("Assets/Resources/Database.asset", typeof(ItemDatabaseObject));
 #else
-        database = Resources.Load<ItemDatabaseObject>("Database1");
+        database = Resources.Load<ItemDatabaseObject>("Database");
 #endif
     }
 
