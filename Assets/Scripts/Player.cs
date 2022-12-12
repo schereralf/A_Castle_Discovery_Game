@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
 
         public void OnTriggerEnter(Collider other)
     {
-        var item = other.GetComponent<Item>();
+        var item = other.GetComponent<FloorItem>();
         var masteraxl = other.GetComponent<MasterAxl>();
         var mastersverker = other.GetComponent<MasterSverker>();
         var masterole = other.GetComponent<MasterOle>();
@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
 
         if (item!=null)
         {
-            Inventory.AddItem(item.item, 1);
+            Inventory.AddItem(new Item(item.item), 1);
             CheckScore();
             narrate = item.item.name+". "+item.item.description;
             narrateText.text = "Last discovered item: " + narrate;
@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
 
     public void CheckScore()
     {
-        score = Inventory.Container.Count;
+        score = Inventory.Container.Items.Count;
         if (axl_done) score += 5;
         if (ole_done) score += 5;
         if (sverker_done) score += 5;
@@ -179,6 +179,6 @@ public class Player : MonoBehaviour
   
     private void OnApplicationQuit()
     {
-        Inventory.Container.Clear();
+        Inventory.Container.Items.Clear();
     }
 }

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Adze
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2323399458131131517, guid: 8f2e5f8b14fe096488b59af1e974df8b, type: 3}
+  Id: 14
+  uiDisplay: {fileID: 21300000, guid: d1ed4427f1f49b248b442b836f04060d, type: 3}
   type: 2
   craft: 0
   description: A adze has the cutting edge perpendicular to the handle.  The shape

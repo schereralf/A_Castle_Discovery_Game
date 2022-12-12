@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Bellows
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6937615650793717101, guid: 7c86f0faf60558847a031fa20b84d230, type: 3}
+  Id: 13
+  uiDisplay: {fileID: 21300000, guid: 41f22bfc8bd14204590df3b28e7ce194, type: 3}
   type: 2
   craft: 2
   description: A smith uses bellows to bring air into a furnace, so that the fire

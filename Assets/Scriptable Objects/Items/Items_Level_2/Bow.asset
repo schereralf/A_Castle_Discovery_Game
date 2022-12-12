@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5be99c56aa6754b81e5e061a0b5411, type: 3}
   m_Name: Bow
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9153571812832224829, guid: 92b9d21cde829714a997b99ff4f1cfa2, type: 3}
+  Id: 18
+  uiDisplay: {fileID: 21300000, guid: 003f01dbf8eba6b41aeda9caaf950740, type: 3}
   type: 4
   craft: 5
   description: 'The Bow:  originally a hunting device, but also the most common ranged

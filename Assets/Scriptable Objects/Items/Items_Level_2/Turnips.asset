@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423b1ffb8ac68d42b410022b948cf69, type: 3}
   m_Name: Turnips
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5608695733066790406, guid: a15216122e8616944b8e4cad39ebc877, type: 3}
+  Id: 27
+  uiDisplay: {fileID: 21300000, guid: 123395fd725087d42963fd2dce76258c, type: 3}
   type: 3
   craft: 4
   description: 'Here is how this works: a farmer grows turnips, sells them to a trader. 

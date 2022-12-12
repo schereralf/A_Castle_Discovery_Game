@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Ladder
   m_EditorClassIdentifier: 
-  prefab: {fileID: 754398095637074802, guid: a825dc487892def43a09e52726088d76, type: 3}
+  Id: 2
+  uiDisplay: {fileID: 21300000, guid: f5eeb90bfb13bdb4392f7bb14c7b5d45, type: 3}
   type: 2
   craft: 1
   description: Ladders are very necessary when building large structures.

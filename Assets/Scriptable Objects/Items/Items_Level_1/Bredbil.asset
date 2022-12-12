@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Bredbil
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4088935917582490150, guid: ed40dc08080dbd841a8ef70cb2ef5062, type: 3}
+  Id: 4
+  uiDisplay: {fileID: 21300000, guid: 4782e79642a47ff4f9b17234dbe6ed08, type: 3}
   type: 2
+  craft: 0
   description: The Bredbil is a special axe that is usefully designed for carpentry
     work.
   constructionBonus: 3

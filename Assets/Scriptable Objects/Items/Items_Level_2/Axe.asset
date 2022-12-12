@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5be99c56aa6754b81e5e061a0b5411, type: 3}
   m_Name: Axe
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6446753778595481739, guid: 63c0258ab0fac4f4d843ea14b59c7fe3, type: 3}
+  Id: 15
+  uiDisplay: {fileID: 21300000, guid: 383b4a8997bfa284ea800e51f4674c66, type: 3}
   type: 4
   craft: 5
   description: 'The axe is a basic cutting tool usedfor felling trees,chopping wood

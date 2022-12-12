@@ -29,7 +29,7 @@ public class Master : MonoBehaviour
     public void CheckProgress(InventoryObject ncollected, int score)
     {
         ThisMaster();
-        var craftItems = ncollected.Container.FindAll(s => s.item.craft.Equals(craftName));
+        var craftItems = ncollected.Container.Items.FindAll(s => s.item.craft.Equals(craftName));
         foreach (var entry in database.Items) { if (entry.craft.Equals(craftName)) databaseItems++; }
 
         int uncollectedItems = databaseItems - craftItems.Count;

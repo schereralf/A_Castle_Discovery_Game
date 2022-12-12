@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33130c41504b59240bded5df75b3a3e0, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5556084586843192700, guid: 16cc9e43c8bd51e4ca7cba46bfe92db9, type: 3}
+  Id: 8
+  uiDisplay: {fileID: 21300000, guid: 5c61132177181fa4383c043f331c2030, type: 3}
   type: 0
+  craft: 0
   description: Wood is useful in buildings and for making furniture and siege equipment.
   costPerModus: 8

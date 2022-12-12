@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Winch
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3461519586254468228, guid: a3d39fc174c2d214fbc50c5b6cbcb283, type: 3}
+  Id: 12
+  uiDisplay: {fileID: 21300000, guid: 99f6b814175e0d14a819fc7667442979, type: 3}
   type: 2
   craft: 1
   description: Winches are used to lift heavy stuff such as bricks, stones and sandwiches

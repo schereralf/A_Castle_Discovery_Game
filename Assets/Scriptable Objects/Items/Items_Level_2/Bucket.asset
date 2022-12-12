@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Bucket
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3126034931934157166, guid: 1e6d18f44f126a349a56cabfadf8ad37, type: 3}
+  Id: 19
+  uiDisplay: {fileID: 21300000, guid: a1b6500ebb6df0a41bf814cc1b89619f, type: 3}
   type: 2
   craft: 3
   description: The Bucket is used by farmers to handle both liquid and solid items.

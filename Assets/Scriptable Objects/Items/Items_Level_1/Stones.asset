@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33130c41504b59240bded5df75b3a3e0, type: 3}
   m_Name: Stones
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7629313722808597866, guid: 31b5d654fdc6bdc4aa39ba98fed2886f, type: 3}
+  Id: 7
+  uiDisplay: {fileID: 21300000, guid: ba112bfa858716143830533d4ac46a22, type: 3}
   type: 0
   craft: 1
   description: Stones are used for roads and building fundaments.

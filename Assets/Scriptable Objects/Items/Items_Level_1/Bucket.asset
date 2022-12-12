@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Bucket
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8503923171929701326, guid: 4efd7302c29c28b4ca43c94133f7757e, type: 3}
+  Id: 10
+  uiDisplay: {fileID: 21300000, guid: 7ed1522073cdf4a41a5185c42a95e4b7, type: 3}
   type: 2
+  craft: 0
   description: Buckets are useful for holding mortar or paint, a builder always has
     them close at hand.
   constructionBonus: 2

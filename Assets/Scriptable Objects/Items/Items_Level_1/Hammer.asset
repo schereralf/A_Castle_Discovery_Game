@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6636786986119700508, guid: 2d4c42f9a574fb64e91161b93ec4aa2c, type: 3}
+  Id: 1
+  uiDisplay: {fileID: 21300000, guid: 6bdad9d533544a243ac06225859d0510, type: 3}
   type: 2
   craft: 2
   description: Every blacksmith needs a hammer !

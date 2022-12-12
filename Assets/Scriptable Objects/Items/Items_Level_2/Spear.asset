@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5be99c56aa6754b81e5e061a0b5411, type: 3}
   m_Name: Spear
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5261414953781194071, guid: 0ff1ed751df611849915c728baed7b36, type: 3}
+  Id: 26
+  uiDisplay: {fileID: 21300000, guid: 214736b63ac8b6848b6331d1740b93b8, type: 3}
   type: 4
   craft: 5
   description: A Spear is  yet another basic hunting tool.  Also a favourite weapon

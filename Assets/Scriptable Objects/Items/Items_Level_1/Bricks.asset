@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33130c41504b59240bded5df75b3a3e0, type: 3}
   m_Name: Bricks
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4562600684087418581, guid: 25a025e9812c94d40ae8736abc60631e, type: 3}
+  Id: 6
+  uiDisplay: {fileID: 21300000, guid: 02d87ac63a251654989f3d155a346b13, type: 3}
   type: 0
   craft: 1
   description: Bricks are used by masons to make walls, furnaces, pedestals and other

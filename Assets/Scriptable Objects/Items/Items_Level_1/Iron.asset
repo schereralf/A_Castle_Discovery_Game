@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33130c41504b59240bded5df75b3a3e0, type: 3}
   m_Name: Iron
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8853760292500455001, guid: 99e76611e7a5b1a489438c258b916801, type: 3}
+  Id: 9
+  uiDisplay: {fileID: 21300000, guid: b14d9bb63350932439ff7f52f5205d22, type: 3}
   type: 0
   craft: 2
   description: Iron nails, horseshoes, grates, rods and tools were both useful and

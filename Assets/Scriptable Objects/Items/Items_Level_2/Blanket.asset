@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423b1ffb8ac68d42b410022b948cf69, type: 3}
   m_Name: Blanket
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6910728856810171667, guid: 0c4998dfcc8bc634994ce1a1cbc4f53b, type: 3}
+  Id: 17
+  uiDisplay: {fileID: 21300000, guid: 22c6752b4fdc0f04f88e967c06448676, type: 3}
   type: 3
   craft: 4
   description: 'The Blanket keeps you warm in winter and it can be also very decorative. '

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Pitchfork
   m_EditorClassIdentifier: 
-  prefab: {fileID: 634790550678799917, guid: 5c482abdf19cc5c49bfedd47bcaee00e, type: 3}
+  Id: 22
+  uiDisplay: {fileID: 21300000, guid: 3d3b315eb8f2e4b4b9ebcdc0122c75db, type: 3}
   type: 2
   craft: 3
   description: A pitchfork is useful in handling various types of farm materials...

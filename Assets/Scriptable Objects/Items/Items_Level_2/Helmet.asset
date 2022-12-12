@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5be99c56aa6754b81e5e061a0b5411, type: 3}
   m_Name: Helmet
   m_EditorClassIdentifier: 
-  prefab: {fileID: 45154580365126495, guid: b0592297eb572a54caf8588d3667854f, type: 3}
+  Id: 21
+  uiDisplay: {fileID: 21300000, guid: ddd8847ffb625ba40b7c42528145c273, type: 3}
   type: 4
   craft: 5
   description: Using a  Helmet to cover your head is a  key rule in warfare !

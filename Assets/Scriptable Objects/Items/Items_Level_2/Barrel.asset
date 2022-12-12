@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423b1ffb8ac68d42b410022b948cf69, type: 3}
   m_Name: Barrel
   m_EditorClassIdentifier: 
-  prefab: {fileID: 691600308869728568, guid: 08b86d3cc7c779a41b847eadec714817, type: 3}
+  Id: 16
+  uiDisplay: {fileID: 21300000, guid: 6f5a429e757d9f2498c9687193503cb9, type: 3}
   type: 3
   craft: 4
   description: Barrels are needed to move large amounts of liquid  stuff fromone

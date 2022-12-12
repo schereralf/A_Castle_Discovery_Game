@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Sickle
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2709566862287429628, guid: 80c6fa5afa7ed1c4c993a0305daba90a, type: 3}
+  Id: 25
+  uiDisplay: {fileID: 21300000, guid: 12a68dac8257eca48936f4f68728cc73, type: 3}
   type: 2
   craft: 3
   description: A Sickle is used for harvesting grain and other small cutting jobs.

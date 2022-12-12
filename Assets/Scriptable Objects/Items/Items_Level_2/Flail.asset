@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Flail
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6273404313296990053, guid: f2ced54f04c13fe4b870e872b74e9eb6, type: 3}
+  Id: 20
+  uiDisplay: {fileID: 21300000, guid: 7319ab078e6ad6543b014875e53c75c3, type: 3}
   type: 2
   craft: 3
   description: A Flail is used by farmers to thresh grains.  Flails can be modified

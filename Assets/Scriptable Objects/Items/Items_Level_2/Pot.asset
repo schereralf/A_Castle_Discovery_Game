@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423b1ffb8ac68d42b410022b948cf69, type: 3}
   m_Name: Pot
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4696176079545004229, guid: a0096d3cc6c259b4f83aef1ad3ee5f51, type: 3}
+  Id: 23
+  uiDisplay: {fileID: 21300000, guid: d0f8f205ff394f548a4122ae0d3cb08d, type: 3}
   type: 3
   craft: 4
   description: A Pot  is used to prepare food.  Everyone needs a pot.  People who

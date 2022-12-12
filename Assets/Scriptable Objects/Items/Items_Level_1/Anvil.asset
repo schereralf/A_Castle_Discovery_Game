@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9cac04a6b28344883f610457a4ed07, type: 3}
   m_Name: Anvil
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2125109982770364275, guid: 450b046271f19be41997ef03932d3b33, type: 3}
+  Id: 5
+  uiDisplay: {fileID: 21300000, guid: 12316614692ff0f47bd319c849bd59df, type: 3}
   type: 2
   craft: 2
   description: A anvil is used by the smith for smashing and straightening metal

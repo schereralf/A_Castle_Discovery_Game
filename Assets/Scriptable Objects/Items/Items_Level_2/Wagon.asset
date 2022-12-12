@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3423b1ffb8ac68d42b410022b948cf69, type: 3}
   m_Name: Wagon
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6128155973738816575, guid: 68fdd45db86c91a438cc71bf8fee79cc, type: 3}
+  Id: 28
+  uiDisplay: {fileID: 21300000, guid: a3d01796ef66d4346b690fde4d68660a, type: 3}
   type: 3
   craft: 4
   description: 'To move bales, barrels and stuff from A to B you will need a wagon. 
