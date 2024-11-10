@@ -69,7 +69,7 @@ public class CastleGameManager : MonoBehaviour
             }
             if (item.PlayerScore > maxScore2 && !filled)
             {
-                Debug.Log("thankgodwegothere"+item.PlayerScore);
+                //Debug.Log("thankgodwegothere"+item.PlayerScore);
                 maxScore4 = maxScore3; maxScorer4 = maxScorer3;
                 maxScore3 = maxScore2; maxScorer3 = maxScorer2;
                 maxScore2 = item.PlayerScore;

@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public bool isGameActive;
     public GameObject titleScreen;
     public Time starttime;
+    public List<string>master_done = new();
 
     // Start is called before the first frame update
     void Start()

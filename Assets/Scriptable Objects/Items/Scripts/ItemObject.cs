@@ -21,7 +21,7 @@ public enum ItemCraft
 }
 
 // ABSTRACTION
-// There are three types of itemtypes.  Common to each one is a description, a type, and a prefab.
+// There are five sorts of itemtypes in the game.  Common to each one is a description, a type, and a prefab.
 public abstract class ItemObject : ScriptableObject
 {
     public int Id;
@@ -42,5 +42,6 @@ public class Item
     {
         Name = item.name;
         Id = item.Id;
+        craft = item.craft;
     }
 }

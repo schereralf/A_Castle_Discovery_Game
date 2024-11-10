@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,11 +8,10 @@ public class Master : MonoBehaviour
     public TextMeshProUGUI completedGameText;
     public TextMeshProUGUI narrateText;
     public ItemDatabaseObject database;
-    protected string masterName;
+        protected string masterName;
     protected ItemCraft craftName;
     protected int databaseItems = 0;
     private GameManager gameManager;
-    private int mastercounter = 0;
 
     // Virtual method to show that you have entered a masters presence with progress report
 
@@ -40,8 +40,8 @@ public class Master : MonoBehaviour
         else
         {
             narrateText.text = ("Master " + masterName + " says: Great, you are done with my part of this game. My work can begin! You have collected all of my " + databaseItems + " items!");
-            mastercounter++;
-            if (mastercounter>=3) 
+            if (!gameManager.master_done.Contains(masterName)) { gameManager.master_done.Add(masterName); }
+            if(gameManager.master_done.Count>=3)
             {
                 completedGameText.gameObject.SetActive(true);
                 gameManager.SaveScore(score);

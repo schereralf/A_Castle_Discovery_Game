@@ -15,7 +15,7 @@ MonoBehaviour:
   Id: 10
   uiDisplay: {fileID: 21300000, guid: 7ed1522073cdf4a41a5185c42a95e4b7, type: 3}
   type: 2
-  craft: 0
+  craft: 1
   description: Buckets are useful for holding mortar or paint, a builder always has
     them close at hand.
   constructionBonus: 2
